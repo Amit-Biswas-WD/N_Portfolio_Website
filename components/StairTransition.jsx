@@ -1,14 +1,14 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { useParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Stairs from "./Stairs";
 
 const StairTransition = () => {
-  const pathname = useParams();
+  const pathname = usePathname();
   return (
     <>
-      <AnimatePresence made="wait">
+      <AnimatePresence mode="wait">
         <div key={pathname}>
           <div className="h-screen w-screen fixed top-0 left-0 right-0 z-40 pointer-events-none flex">
             <Stairs />
