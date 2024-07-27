@@ -3,15 +3,15 @@
 import CountUp from "react-countup";
 
 const stats = [
-  { num: 12, text: "Year of Experience" },
+  { num: 12, text: "Years of Experience" },
   { num: 26, text: "Project of Completed" },
-  { num: 8, text: "Technologies mastered" },
+  { num: 8, text: "Technologies Mastered" },
   { num: 500, text: "Code Commits" },
 ];
 
 const Stats = () => {
   return (
-    <section>
+    <section className="pt-4 xl:pt-0 pb-12 xl:pb-0">
       <div className="container mx-auto">
         <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none">
           {stats.map((item, index) => {
@@ -26,7 +26,13 @@ const Stats = () => {
                   delay={2}
                   className="text-4xl xl:text-6xl font-semibold"
                 />
-                <p>{item.text}</p>
+                <p
+                  className={`${
+                    item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
+                  } leading-snug text-white/80`}
+                >
+                  {item.text}
+                </p>
               </div>
             );
           })}
