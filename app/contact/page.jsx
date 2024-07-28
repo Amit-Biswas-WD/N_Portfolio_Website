@@ -9,7 +9,23 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
 import {FaPhoneAlt, FaEnvelope, FaMapMarkerAlt} from "react-icons/fa"
 
-
+const info = [
+  {
+    icon: <FaPhoneAlt/>,
+    title: "Phone",
+    description: "+88 01883478528",
+  },
+  {
+    icon: <FaEnvelope/>,
+    title: "Email",
+    description: "amitbiswas9282@gmail.com",
+  },
+  {
+    icon: <FaMapMarkerAlt/>,
+    title: "Address",
+    description: "Dhaka, Bangladesh",
+  },
+]
 
 const Contact = () => {
   return (<motion.div
