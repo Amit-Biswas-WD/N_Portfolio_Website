@@ -15,7 +15,6 @@ import Image from "next/image";
 import image1 from "@/public/assets/work/image.png";
 import image2 from "@/public/assets/work/image2.jpg";
 import image3 from "@/public/assets/work/images3.png";
-import { Component } from './../../.next/server/vendor-chunks/framer-motion';
 import WorkSliderBtn from "@/components/WorkSliderBtn";
 
 const projects = [
@@ -161,7 +160,8 @@ const Work = () => {
                 </SwiperSlide>
               )
             })}
-            <WorkSliderBtn/>
+            {/*  */}
+            <WorkSliderBtn containerStyles="flex gap-2 absolute right-0 bottom-[calc-(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-44px] flex justify-center items-center transition-all"/>
           </Swiper>
         </div>
       </div>
