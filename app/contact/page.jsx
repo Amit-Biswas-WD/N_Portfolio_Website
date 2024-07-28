@@ -42,11 +42,22 @@ const Contact = () => {
       <h3 className="text-4xl text-accent">Let,s work together</h3>
       <p className="text-white/60">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni deleniti harum consequuntur saepe iure.</p>
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
-        <input type="firstName" placeholder="First Name" />
-        <input type="lastName" placeholder="Last Name" />
-        <input type="email" placeholder="Email Address" />
-        <input type="phone" placeholder="Phone Number" />
+        <Input type="firstName" placeholder="First Name" />
+        <Input type="lastName" placeholder="Last Name" />
+        <Input type="email" placeholder="Email Address" />
+        <Input type="phone" placeholder="Phone Number" />
       </div>
+      <Select>
+        <SelectTrigger className="w-full">
+        <SelectValue placeholder="Select a services"/>
+        </SelectTrigger>
+        <SelectContent>
+          <SelectGroup>
+            <SelectLabel>Select a services</SelectLabel>
+            <SelectItem>Web Development</SelectItem>
+          </SelectGroup>
+        </SelectContent>
+      </Select>
       </form></div>
     <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">Info</div>
     </div>
