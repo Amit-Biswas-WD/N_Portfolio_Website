@@ -34,9 +34,23 @@ const Contact = () => {
     opacity: 1,
     transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
   }}
-  className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+  className="py-6"
 >
-  <div>jdfasldjf</div>
+  <div className="container mx-auto">
+    <div className="flex flex-col xl:flex-row gap-[30px]">
+    <div className="xl:h-[54%] order-2 xl:order-none"><form className="flex flex-col gap-4 p-10 bg-[#27272c] rounded-xl">
+      <h3 className="text-4xl text-accent">Let,s work together</h3>
+      <p className="text-white/60">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni deleniti harum consequuntur saepe iure.</p>
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+        <input type="firstName" placeholder="First Name" />
+        <input type="lastName" placeholder="Last Name" />
+        <input type="email" placeholder="Email Address" />
+        <input type="phone" placeholder="Phone Number" />
+      </div>
+      </form></div>
+    <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">Info</div>
+    </div>
+  </div>
 </motion.div>)
 };
 
