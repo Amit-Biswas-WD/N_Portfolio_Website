@@ -21,7 +21,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "About Me",
   description:
-    "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate",
+    "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying.",
   info: [
     { fieldName: "Name", FieldValue: "Amit Biswas" },
     { fieldName: "Phone", FieldValue: "+88 01883478528" },
@@ -37,7 +37,7 @@ const experience = {
   icon: "/",
   title: "My experience 1",
   description:
-    "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate",
+    "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ",
   items: [
     {
       company: "Programming Hero 1",
@@ -66,7 +66,7 @@ const education = {
   icon: "/",
   title: "My Education",
   description:
-    "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate",
+    "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ",
   items: [
     {
       institution: "Nation University",
@@ -94,7 +94,7 @@ const education = {
 const skills = {
   title: "My Skills",
   description:
-    "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate",
+    "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -245,31 +245,28 @@ const Resume = () => {
                 </ul>
               </div>
             </TabsContent>
-            <TabsContent value="about" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+            <TabsContent
+              value="about"
+              className="w-full text-center xl:text-start"
+            >
+              <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                    {experience.items.map((item, index) => {
-                      return (
-                        <li
-                          key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-                        >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3>{item.position}</h3>
-                          <div className="flex items-center gap-3">
-                            <span className="w-[6px] h-[6px] bg-accent rounded-full"></span>
-                            <p className="text-white/60">{item.company}</p>
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </ScrollArea>
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                  {about.info.map((item, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className="flex item-center justify-center xl:justify-start gap-4"
+                      >
+                        <span className="text-white/60">{item.fieldName}</span>
+                        <span className="text-md">{item.FieldValue}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
               </div>
             </TabsContent>
           </div>
