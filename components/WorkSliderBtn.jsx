@@ -10,6 +10,7 @@ const WorkSliderBtn = ({containerStyle, btnStyle, iconsStyle}) => {
       <button className={btnStyle}>
         <PiCaretLeftBold className={iconsStyle}/>
       </button>
+      kjhkgujguigyi
       <button className={btnStyle}>
         <PiCaretRightBold className={iconsStyle}/>
       </button>
