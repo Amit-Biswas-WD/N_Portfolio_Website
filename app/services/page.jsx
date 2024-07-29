@@ -21,10 +21,10 @@ const service = [
   // },
   {
     num: "02",
-    title: "Logo Design",
+    title: "Web Design",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia autem cum!",
-    href: "/logo-design",
+    href: "/web-design",
   },
   // {
   //   num: "04",

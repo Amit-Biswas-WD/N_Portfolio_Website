@@ -116,10 +116,10 @@ const skills = {
       icon: <FaReact />,
       name: "React JS",
     },
-    {
-      icon: <FaFigma />,
-      name: "Fima",
-    },
+    // {
+    //   icon: <FaFigma />,
+    //   name: "Fima",
+    // },
     {
       icon: <FaNodeJs />,
       name: "NodeJs",
