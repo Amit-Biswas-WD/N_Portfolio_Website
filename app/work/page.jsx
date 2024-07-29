@@ -61,6 +61,7 @@ stack: [
   {name: "React JS"},
   {name: "Node JS"},
   {name: "Express"},
+  {name: "Mongodb"},
 ],
 image: image2,
 live: "",
@@ -79,6 +80,7 @@ github: "",
     {name: "React JS"},
     {name: "Node JS"},
     {name: "Express"},
+    {name: "Mongodb"},
   ],
 image: image3,
 live: "",
@@ -110,7 +112,7 @@ const Work = () => {
          <ul className="flex gap-4">
           {project.stack.map((item, index) => {
             return (
-              <li key={index} className="text-xl text-accent">{item.name}
+              <li key={index} className="text-lg text-accent">{item.name}
               {index !== project.stack.length - 1 && ','}
               </li>
             )

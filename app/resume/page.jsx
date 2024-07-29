@@ -35,7 +35,7 @@ const about = {
 
 const experience = {
   icon: "/",
-  title: "My experience 1",
+  title: "My experience",
   description:
     "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ",
   items: [

@@ -12,27 +12,27 @@ const service = [
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia autem cum!",
     href: "/web-development",
   },
+  // {
+  //   num: "02",
+  //   title: "UI/UX Design",
+  //   description:
+  //     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia autem cum!",
+  //   href: "/ui-ux-design",
+  // },
   {
     num: "02",
-    title: "UI/UX Design",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia autem cum!",
-    href: "/ui-ux-design",
-  },
-  {
-    num: "03",
     title: "Logo Design",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia autem cum!",
     href: "/logo-design",
   },
-  {
-    num: "04",
-    title: "SEO",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia autem cum!",
-    href: "/seo",
-  },
+  // {
+  //   num: "04",
+  //   title: "SEO",
+  //   description:
+  //     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia autem cum!",
+  //   href: "/seo",
+  // },
 ];
 
 const Services = () => {
