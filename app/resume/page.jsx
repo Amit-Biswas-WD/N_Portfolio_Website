@@ -1,6 +1,6 @@
 "use client";
 
-import { FaHtml5, FaJs, FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
 import { IoLogoCss3 } from "react-icons/io";
 
@@ -21,7 +21,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "About Me",
   description:
-    "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying.",
+    "I am a front-end web developer. With one year of experience, working with HTML, CSS, JavaScript and React. If you want to contact me, you can contact me on the number below or through Gmail.",
   info: [
     { fieldName: "Name", FieldValue: "Amit Biswas" },
     { fieldName: "Phone", FieldValue: "+88 01883478528" },
@@ -40,24 +40,14 @@ const experience = {
     "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ",
   items: [
     {
-      company: "Programming Hero 1",
+      company: "Learning",
       position: "Front-end Web Developer / MERN Stack Developer",
       duration: "2023 - present",
     },
     {
-      company: "Programming Hero 2",
-      position: "Front-end Web Developer / MERN Stack Developer",
-      duration: "2023 - present",
-    },
-    {
-      company: "Programming Hero 3",
-      position: "Front-end Web Developer / MERN Stack Developer",
-      duration: "2023 - present",
-    },
-    {
-      company: "Programming Hero 4",
-      position: "Front-end Web Developer / MERN Stack Developer",
-      duration: "2023 - present",
+      company: "Programming Hero",
+      position: "Front-end Web Developer / MERN Stack Developer Course",
+      duration: "2023-12-20 - present",
     },
   ],
 };
@@ -66,7 +56,7 @@ const education = {
   icon: "/",
   title: "My Education",
   description:
-    "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ",
+    "I am studying in first year of B.A department of National University. And I completed Programming Hero web development course.",
   items: [
     {
       institution: "Nation University",
@@ -74,17 +64,7 @@ const education = {
       duration: "2024 - present",
     },
     {
-      institution: "Programming Hero 1",
-      degree: "Front-end Web Developer / MERN Stack Developer",
-      duration: "2023/12/26 - 2024/06/30",
-    },
-    {
-      institution: "Programming Hero 2",
-      degree: "Front-end Web Developer / MERN Stack Developer",
-      duration: "2023/12/26 - 2024/06/30",
-    },
-    {
-      institution: "Programming Hero 3",
+      institution: "Programming Hero",
       degree: "Front-end Web Developer / MERN Stack Developer",
       duration: "2023/12/26 - 2024/06/30",
     },
@@ -94,7 +74,7 @@ const education = {
 const skills = {
   title: "My Skills",
   description:
-    "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ",
+    "Learned HTML, CSS, Tailwind CSS, JavaScript, React, Node.js, Express, MongoDB, Next.js for over a year and engaged in full stack web application and modern web application development.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -116,10 +96,6 @@ const skills = {
       icon: <FaReact />,
       name: "React JS",
     },
-    // {
-    //   icon: <FaFigma />,
-    //   name: "Fima",
-    // },
     {
       icon: <FaNodeJs />,
       name: "NodeJs",
@@ -172,7 +148,7 @@ const Resume = () => {
                           className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-start">
+                          <h3 className="text-lg max-w-[280px] min-h-[80px] text-center lg:text-start">
                             {item.position}
                           </h3>
                           <div className="flex items-center gap-3">

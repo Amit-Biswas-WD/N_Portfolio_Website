@@ -4,30 +4,24 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
-  { name: "home", path: "/" },
-  {
-    name: "services",
-    path: "/services",
-  },
-  {
-    name: "resume",
-    path: "/resume",
-  },
-  {
-    name: "work",
-    path: "/work",
-  },
-  {
-    name: "contact",
-    path: "/contact",
-  },
-];
+    {
+      name: "services",
+      path: "/dashboard/services",
+    },
+    {
+      name: "resume",
+      path: "/dashboard/resume",
+    },
+    {
+      name: "work",
+      path: "/dashboard/work",
+    },
+  ];
 
-
-export const Nav = () => {
+const DashboardNav = () => {
   const pathName = usePathname();
   return (
-    <nav className="flex gap-8">
+    <nav className="flex flex-col gap-6">
       {links.map((link, index) => {
         return (
           <Link
@@ -44,3 +38,5 @@ export const Nav = () => {
     </nav>
   );
 };
+
+export default DashboardNav

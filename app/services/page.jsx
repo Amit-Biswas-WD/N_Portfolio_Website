@@ -7,32 +7,25 @@ import Link from "next/link";
 const service = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Front-end Web Development",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia autem cum!",
-    href: "/web-development",
+      "One year front-end web development experience. Proficient in HTML, CSS, JavaScript. Proficient in using React framework. Experienced in developing responsive and interactive web applications.",
+    href: "/Front-end-web-development",
   },
-  // {
-  //   num: "02",
-  //   title: "UI/UX Design",
-  //   description:
-  //     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia autem cum!",
-  //   href: "/ui-ux-design",
-  // },
   {
     num: "02",
-    title: "Web Design",
+    title: "Back-end Web Development",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia autem cum!",
-    href: "/web-design",
+      "One year back-end web development experience. Node.js, Skills Gained. Proficient in database (MongoDB). Experienced in designing and implementing RESTful APIs.",
+    href: "/back-end-web-development",
   },
-  // {
-  //   num: "04",
-  //   title: "SEO",
-  //   description:
-  //     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia autem cum!",
-  //   href: "/seo",
-  // },
+  {
+    num: "03",
+    title: "MERN Stack Development",
+    description:
+      "One year of MERN stack web development experience. Proficient in React, Node.js, Express, MongoDB. Proficient in full stack web application development.",
+    href: "/mern",
+  },
 ];
 
 const Services = () => {
