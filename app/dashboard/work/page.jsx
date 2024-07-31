@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button";
 
-const Work = () => {
+const WorkInput = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -22,7 +22,6 @@ const Work = () => {
         <Input name="title" className="w-full my-4" type="text" placeholder="Type title" />
         <Input name="title" className="w-full my-4" type="text" placeholder="Type title" />
         <Input name="title" className="w-full my-4" type="text" placeholder="Type title" />
-        <Input name="title" className="w-full my-4" type="text" placeholder="Type title" />
         <Textarea name="text" className="h-[200px] my-4" placeholder="Type your message here." />
         <Button size="md" type="submit" className="max-w-40 my-4">Send message</Button>
       </form>
@@ -30,4 +29,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export default WorkInput
