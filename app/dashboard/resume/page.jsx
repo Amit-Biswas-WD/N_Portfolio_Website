@@ -48,7 +48,7 @@ const experience = [
 const education = [
   {
     title: "Education",
-    items: [
+    list: [
       {
         institution: (
           <Input
@@ -85,7 +85,6 @@ const education = [
     ),
   },
 ];
-
 
 const skills = [
   {
@@ -208,7 +207,7 @@ const ResumeInput = () => {
         {experience.map((item, index) => (
           <div key={index}>
             <h2>{item.title}</h2>
-            {experience.items.map((subItem, subIndex) => (
+            {item.items.map((subItem, subIndex) => (
               <div key={subIndex}>
                 {subItem.company}
                 {subItem.position}
@@ -226,11 +225,50 @@ const ResumeInput = () => {
         {education.map((item, index) => (
           <div key={index}>
             <h2>{item.title}</h2>
-            {item.items.map((subItem, subIndex) => (
+            {item.list.map((subItem, subIndex) => (
               <div key={subIndex}>
                 {subItem.institution}
                 {subItem.degree}
                 {subItem.duration}
+              </div>
+            ))}
+            {item.description}
+          </div>
+        ))}
+        <Button size="md" type="submit" className="max-w-40 my-4">
+          Submit
+        </Button>
+      </form>
+      <form onSubmit={handleSubmit}>
+        {skills.map((item, index) => (
+          <div key={index}>
+            <h2>{item.title}</h2>
+            {item.skillList.map((subItem, subIndex) => (
+              <div key={subIndex}>
+                {subItem.icon}
+                {subItem.name}
+              </div>
+            ))}
+            {item.description}
+          </div>
+        ))}
+        <Button size="md" type="submit" className="max-w-40 my-4">
+          Submit
+        </Button>
+      </form>
+      <form onSubmit={handleSubmit}>
+        {about.map((item, index) => (
+          <div key={index}>
+            <h2>{item.title}</h2>
+            {item.info.map((subItem, subIndex) => (
+              <div key={subIndex}>
+                {subItem.name}
+                {subItem.phone}
+                {subItem.experience}
+                {subItem.nationality}
+                {subItem.email}
+                {subItem.language}
+                {subItem.webdev}
               </div>
             ))}
             {item.description}
