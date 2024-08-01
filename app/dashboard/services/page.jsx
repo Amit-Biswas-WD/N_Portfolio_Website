@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 const services = [
   {
-    title: <Input name="title" className="w-full" type="text" placeholder="Type title" />,
+    title: <Input name="title" className="w-full" type="text" placeholder="Type your services title" />,
     description: <Textarea name="text" className="h-[200px] my-4" placeholder="Type your message here." />
 
   }
@@ -17,10 +17,10 @@ const ServiceInput = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
-    const title = form.title.value;
-    const text = form.text.value;
-    console.log(title, text);
-  }
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    console.log(data);
+  };
 
   return (
     <div className="container mx-auto">

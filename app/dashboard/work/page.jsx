@@ -6,11 +6,11 @@ import { Button } from "@/components/ui/button";
 
 const work = [
   {
-    title: <Input name="title" className="w-full my-4" type="text" placeholder="Type title" />,
-    technology: <Input name="technology" className="w-full my-4" type="text" placeholder="Type Technology" />,
-    live: <Input name="live" className="w-full my-4" type="text" placeholder="Type Live Link" />,
-    github: <Input name="github" className="w-full my-4" type="text" placeholder="Type Github Link" />,
-    image: <Input name="image" className="w-full my-4" type="text" placeholder="Type Image" />,
+    title: <Input name="title" className="w-full my-4" type="text" placeholder="Type your project title" />,
+    technology: <Input name="technology" className="w-full my-4" type="text" placeholder="Type project use Technology" />,
+    live: <Input name="live" className="w-full my-4" type="text" placeholder="Type project Live Link" />,
+    github: <Input name="github" className="w-full my-4" type="text" placeholder="Type project Github Link" />,
+    image: <Input name="image" className="w-full my-4" type="text" placeholder="Type project Image" />,
     description: <Textarea name="text" className="h-[200px] my-4" placeholder="Type your message here." />
 
   }
@@ -18,17 +18,25 @@ const work = [
 
 const WorkInput = () => {
 
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   const form = event.target;
+  //   const title = form.title.value;
+  //   const technology = form.technology.value;
+  //   const live = form.live.value;
+  //   const github = form.github.value;
+  //   const image = form.image.value;
+  //   const text = form.text.value;
+  //   console.log(title, technology,live, github, image, text);
+  // }
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
-    const title = form.title.value;
-    const technology = form.technology.value;
-    const live = form.live.value;
-    const github = form.github.value;
-    const image = form.image.value;
-    const text = form.text.value;
-    console.log(title, technology,live, github, image, text);
-  }
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    console.log(data);
+  };
 
   return (
     <div className="container mx-auto">

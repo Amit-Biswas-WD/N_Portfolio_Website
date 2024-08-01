@@ -14,7 +14,7 @@ const experience = [
             name="company"
             className="w-full my-4"
             type="text"
-            placeholder="Type company"
+            placeholder="Type your working company name..."
           />
         ),
         position: (
@@ -22,7 +22,7 @@ const experience = [
             name="position"
             className="w-full my-4"
             type="text"
-            placeholder="Type position"
+            placeholder="Type your position"
           />
         ),
         duration: (
@@ -30,7 +30,7 @@ const experience = [
             name="duration"
             className="w-full my-4"
             type="text"
-            placeholder="Type duration"
+            placeholder="Type your duration"
           />
         ),
       },
@@ -55,7 +55,7 @@ const education = [
             name="institution"
             className="w-full my-4"
             type="text"
-            placeholder="Type institution"
+            placeholder="Type your institution name..."
           />
         ),
         degree: (
@@ -63,7 +63,7 @@ const education = [
             name="degree"
             className="w-full my-4"
             type="text"
-            placeholder="Type degree"
+            placeholder="Type your degree name..."
           />
         ),
         duration: (
@@ -71,7 +71,7 @@ const education = [
             name="duration"
             className="w-full my-4"
             type="text"
-            placeholder="Type duration"
+            placeholder="Type your duration time..."
           />
         ),
       },
@@ -96,7 +96,7 @@ const skills = [
             name="icon"
             className="w-full my-4"
             type="text"
-            placeholder="Type icon"
+            placeholder="Type skills icon </name>..."
           />
         ),
         name: (
@@ -104,7 +104,7 @@ const skills = [
             name="name"
             className="w-full my-4"
             type="text"
-            placeholder="Type name"
+            placeholder="Type skills Name HTML 5..."
           />
         ),
       },
@@ -129,7 +129,7 @@ const about = [
             name="name"
             className="w-full my-4"
             type="text"
-            placeholder="Type name"
+            placeholder="Type your full name..."
           />
         ),
         phone: (
@@ -137,7 +137,7 @@ const about = [
             name="phone"
             className="w-full my-4"
             type="text"
-            placeholder="Type phone"
+            placeholder="Type your phone number..."
           />
         ),
         experience: (
@@ -145,7 +145,7 @@ const about = [
             name="experience"
             className="w-full my-4"
             type="text"
-            placeholder="Type experience"
+            placeholder="Type your experience"
           />
         ),
         nationality: (
@@ -153,7 +153,7 @@ const about = [
             name="nationality"
             className="w-full my-4"
             type="text"
-            placeholder="Type nationality"
+            placeholder="Type your nationality </Bangladeshi>..."
           />
         ),
         email: (
@@ -161,7 +161,7 @@ const about = [
             name="email"
             className="w-full my-4"
             type="text"
-            placeholder="Type email"
+            placeholder="Type your email name..."
           />
         ),
         language: (
@@ -169,7 +169,7 @@ const about = [
             name="language"
             className="w-full my-4"
             type="text"
-            placeholder="Type language"
+            placeholder="Type your language name..."
           />
         ),
         webdev: (
@@ -177,7 +177,7 @@ const about = [
             name="webdev"
             className="w-full my-4"
             type="text"
-            placeholder="Type Web Development"
+            placeholder="Type Web Development </Available>..."
           />
         ),
       },
@@ -206,7 +206,7 @@ const ResumeInput = () => {
       <form onSubmit={handleSubmit}>
         {experience.map((item, index) => (
           <div key={index}>
-            <h2>{item.title}</h2>
+            <h2 className="text-3xl font-semibold text-white/80 my-8">{item.title}</h2>
             {item.items.map((subItem, subIndex) => (
               <div key={subIndex}>
                 {subItem.company}
@@ -224,7 +224,7 @@ const ResumeInput = () => {
       <form onSubmit={handleSubmit}>
         {education.map((item, index) => (
           <div key={index}>
-            <h2>{item.title}</h2>
+            <h2 className="text-3xl font-semibold text-white/80 my-8">{item.title}</h2>
             {item.list.map((subItem, subIndex) => (
               <div key={subIndex}>
                 {subItem.institution}
@@ -242,7 +242,7 @@ const ResumeInput = () => {
       <form onSubmit={handleSubmit}>
         {skills.map((item, index) => (
           <div key={index}>
-            <h2>{item.title}</h2>
+            <h2 className="text-3xl font-semibold text-white/80 my-8">{item.title}</h2>
             {item.skillList.map((subItem, subIndex) => (
               <div key={subIndex}>
                 {subItem.icon}
@@ -259,7 +259,7 @@ const ResumeInput = () => {
       <form onSubmit={handleSubmit}>
         {about.map((item, index) => (
           <div key={index}>
-            <h2>{item.title}</h2>
+            <h2 className="text-3xl font-semibold text-white/80 my-8">{item.title}</h2>
             {item.info.map((subItem, subIndex) => (
               <div key={subIndex}>
                 {subItem.name}
