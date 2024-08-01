@@ -1,14 +1,7 @@
 "use client";
 
-import {
-  SheetContent,
-  SheetTrigger,
-  DashboardSheet,
-} from "@/components/ui/dashboardsheet";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { CiMenuFries } from "react-icons/ci";
-
 
 const links = [
   {
@@ -31,15 +24,11 @@ const links = [
   },
 ];
 
-const DashBoardMobileNav = () => {
+const DashBoardDesktopNav = () => {
   const pathName = usePathname();
 
   return (
-    <DashboardSheet>
-      <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries className="text-[32px] text-accent" />
-      </SheetTrigger>
-      <SheetContent className="flex flex-col">
+      <div className="flex flex-col">
         <nav className="flex flex-col justify-center items-center gap-8">
           {links.map((link, index) => {
             return (
@@ -49,7 +38,7 @@ const DashBoardMobileNav = () => {
                   className={`${
                     link.path === pathName &&
                     "text-accent border-b-2 border-accent"
-                  } capitalize font-medium hover:text-accent transition-all`}
+                  }  capitalize font-medium hover:text-accent transition-all`}
                 >
                   {link.name}
                 </Link>
@@ -57,9 +46,8 @@ const DashBoardMobileNav = () => {
             );
           })}
         </nav>
-      </SheetContent>
-    </DashboardSheet>
+      </div>
   );
 };
 
-export default DashBoardMobileNav;
+export default DashBoardDesktopNav;

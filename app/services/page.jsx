@@ -48,7 +48,7 @@ const Services = () => {
               >
                 <div className="w-full flex justify-between items-center">
                   <div className="text-5xl font-semibold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
-                    {item.num}
+                  0{index+1}
                   </div>
                   <Link
                     href={item.href}

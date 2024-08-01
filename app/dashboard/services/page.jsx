@@ -19,7 +19,7 @@ const ServiceInput = () => {
       <form onSubmit={handleSubmit}>
         <Input name="title" className="w-full" type="text" placeholder="Type title" />
         <Textarea name="text" className="h-[200px] my-4" placeholder="Type your message here." />
-        <Button size="md" type="submit" className="max-w-40">Send message</Button>
+        <Button size="md" type="submit" className="max-w-40">Submit</Button>
       </form>
     </div>
   )
