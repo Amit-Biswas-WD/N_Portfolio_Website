@@ -40,6 +40,7 @@ const WorkInput = () => {
 
   return (
     <div className="container mx-auto">
+            <h2 className="text-3xl font-semibold text-white/80 my-8">Work</h2>
       <form onSubmit={handleSubmit}>
       {work.map((item, index) => (
           <div key={index}>

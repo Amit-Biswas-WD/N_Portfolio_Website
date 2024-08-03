@@ -193,7 +193,32 @@ const about = [
 ];
 
 const ResumeInput = () => {
-  const handleSubmit = (event) => {
+  const handleExperience = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    console.log(data);
+  };
+
+  const handleEducation = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    console.log(data);
+  };
+
+
+  const handleSkills = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    console.log(data);
+  };
+
+  const handleAbout = (event) => {
     event.preventDefault();
     const form = event.target;
     const formData = new FormData(form);
@@ -203,7 +228,7 @@ const ResumeInput = () => {
 
   return (
     <div className="container mx-auto">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleExperience}>
         {experience.map((item, index) => (
           <div key={index}>
             <h2 className="text-3xl font-semibold text-white/80 my-8">{item.title}</h2>
@@ -221,7 +246,7 @@ const ResumeInput = () => {
           Submit
         </Button>
       </form>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleEducation}>
         {education.map((item, index) => (
           <div key={index}>
             <h2 className="text-3xl font-semibold text-white/80 my-8">{item.title}</h2>
@@ -239,7 +264,7 @@ const ResumeInput = () => {
           Submit
         </Button>
       </form>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSkills}>
         {skills.map((item, index) => (
           <div key={index}>
             <h2 className="text-3xl font-semibold text-white/80 my-8">{item.title}</h2>
@@ -256,7 +281,7 @@ const ResumeInput = () => {
           Submit
         </Button>
       </form>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleAbout}>
         {about.map((item, index) => (
           <div key={index}>
             <h2 className="text-3xl font-semibold text-white/80 my-8">{item.title}</h2>
