@@ -21,10 +21,10 @@ import { motion } from "framer-motion";
 const about = {
   title: "About Me",
   description:
-    "I am a front-end web developer. With one year of experience, working with HTML, CSS, JavaScript and React. If you want to contact me, you can contact me on the number below or through Gmail.",
+    "I am a passionate Front-End Web Developer with one year of experience in building responsive and interactive web applications using HTML, CSS, JavaScript, and React. I am always eager to learn new technologies and improve my skills. Feel free to contact me via the phone number or Gmail provided below.",
   info: [
     { fieldName: "Name", FieldValue: "Amit Biswas" },
-    { fieldName: "Phone", FieldValue: "+88 01883478528" },
+    { fieldName: "Phone", FieldValue: "+88 01951400346" },
     { fieldName: "Experience", FieldValue: "1+ Years" },
     { fieldName: "Nationality", FieldValue: "Bangladeshi" },
     { fieldName: "Email", FieldValue: "amitbiswas9282@gmail.com" },
@@ -37,7 +37,7 @@ const experience = {
   icon: "/",
   title: "My experience",
   description:
-    "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ",
+    "I have one year of hands-on experience in front-end web development. During this time, I have built multiple responsive websites and dynamic applications using HTML, CSS, JavaScript, and React. I have also worked with backend technologies like Node.js, Express.js, and MongoDB to develop full-stack web applications. My experience includes building secure login systems, RESTful APIs, and deploying projects using tools like Firebase and Vercel.",
   items: [
     {
       company: "Learning",
@@ -56,12 +56,12 @@ const education = {
   icon: "/",
   title: "My Education",
   description:
-    "I am studying in first year of B.A department of National University. And I completed Programming Hero web development course.",
+    "I am currently studying in the first year of the Diploma in Computer Science and Application (DCSA) program at Bangladesh Open University. And I have completed the Programming Hero web development course.",
   items: [
     {
-      institution: "Nation University",
-      degree: "Bachelors in Arts",
-      duration: "2024 - present",
+      institution: "Bangladesh Open University",
+      degree: "Diploma in Computer Science and Application (DCSA)",
+      duration: "2025 - present",
     },
     {
       institution: "Programming Hero",
@@ -74,7 +74,7 @@ const education = {
 const skills = {
   title: "My Skills",
   description:
-    "Learned HTML, CSS, Tailwind CSS, JavaScript, React, Node.js, Express, MongoDB, Next.js for over a year and engaged in full stack web application and modern web application development.",
+    "Learned Front-End: HTML, CSS, Tailwind CSS, JavaScript, React.js, Next.js, Back-End: Node.js, Express.js, Database: MongoDB for over a year and engaged in full stack web application and modern web application development.",
   skillList: [
     {
       icon: <FaHtml5 />,

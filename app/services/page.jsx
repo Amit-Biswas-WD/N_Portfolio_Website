@@ -3,39 +3,39 @@
 import { BsArrowDownRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
-// const service = [
-//   {
-//     title: "Front-end Web Development",
-//     description: "One year front-end web development experience. Proficient in HTML, CSS, JavaScript. Proficient in using React framework. Experienced in developing responsive and interactive web applications.",
-//     href: "/Front-end-web-development",
-//   },
-//   {
-//     title: "Back-end Web Development",
-//     description: "One year back-end web development experience. Node.js, Skills Gained. Proficient in database (MongoDB). Experienced in designing and implementing RESTful APIs.",
-//     href: "/back-end-web-development",
-//   },
-//   {
-//     title: "MERN Stack Development",
-//     description: "One year of MERN stack web development experience. Proficient in React, Node.js, Express, MongoDB. Proficient in full stack web application development.",
-//     href: "/mern",
-//   },
-// ];
+const services = [
+  {
+    title: "Front-end Web Development",
+    description: "One year front-end web development experience. Proficient in HTML, CSS, JavaScript. Proficient in using React framework. Experienced in developing responsive and interactive web applications.",
+    href: "/Front-end-web-development",
+  },
+  {
+    title: "Back-end Web Development",
+    description: "One year back-end web development experience. Node.js, Skills Gained. Proficient in database (MongoDB). Experienced in designing and implementing RESTful APIs.",
+    href: "/back-end-web-development",
+  },
+  {
+    title: "MERN Stack Development",
+    description: "One year of MERN stack web development experience. Proficient in React, Node.js, Express, MongoDB. Proficient in full stack web application development.",
+    href: "/mern",
+  },
+];
 
 const Services = () => {
-  const [services, setServices] = useState([]);
+  // const [services, setServices] = useState([]);
 
-  useEffect(() => {
-    fetch("http://localhost:5000/services")
-      .then(res => res.json())
-      .then(data => {
-        setServices(data);
-      })
-      .catch(error => {
-        console.error("Error fetching services:", error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   fetch("http://localhost:5000/services")
+  //     .then(res => res.json())
+  //     .then(data => {
+  //       setServices(data);
+  //     })
+  //     .catch(error => {
+  //       console.error("Error fetching services:", error);
+  //     });
+  // }, []);
 
   return (
     <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
