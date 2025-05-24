@@ -18,6 +18,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 import image1 from "@/public/assets/work/image.png";
+import image2 from "@/public/assets/work/image2.png";
+import solarEase from "@/public/assets/work/solarease.png";
+import harMoney from "@/public/assets/work/harmoney.png";
 import WorkSliderBtn from "@/components/WorkSliderBtn";
 
 const projects = [
@@ -56,7 +59,7 @@ const projects = [
     category: "Full Stack",
     title: "project 1",
     description:
-      "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form.",
+      "Built a fully responsive full-stack coffee ordering platform where users can browse coffee items by category, price (high to low / low to high), rating (high to low / low to high), and call data. Integrated secure user authentication with Firebase, allowing logged-in users to access a personalized dashboard. Authenticated users can add, update, and delete their own orders. The frontend is built with React.js and styled using Tailwind CSS, while the backend is powered by Node.js, Express.js, and MongoDB.",
     stack: [
       { name: "HTML 5" },
       { name: "CSS 3" },
@@ -79,7 +82,7 @@ const projects = [
     category: "Full Stack",
     title: "project 2",
     description:
-      "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form.",
+      "Apple Gadgets This is an e-commerce website built using Next.js. I have completed the Home page, which includes the Category section, Featured Products, New Arrivals, and Top Brand Products. It also features brand logos, a description section, and a footer. The website is fully responsive across all devices.",
     stack: [
       { name: "HTML 5" },
       { name: "CSS 3" },
@@ -90,10 +93,45 @@ const projects = [
       { name: "Express JS" },
       { name: "Mongodb" },
     ],
-    image: image1,
-    live: "https://clent-side-apple-gadgets-3uw2cxpxt-amit6.vercel.app",
+    image: harMoney,
+    live: "https://zippy-sawine-294126.netlify.app",
+    frontend_github:
+      "https://github.com/Amit-Biswas-WD/b9a11-client-side.git",
+    backend_github: "https://github.com/Amit-Biswas-WD/b9a11-server-side.git",
+  },
+  {
+    num: "03",
+    category: "React js . Next js",
+    title: "project 3",
+    description:
+      "Apple Gadgets This is an e-commerce website built using Next.js. I have completed the Home page, which includes the Category section, Featured Products, New Arrivals, and Top Brand Products. It also features brand logos, a description section, and a footer. The website is fully responsive across all devices.",
+    stack: [
+      { name: "CSS 3" },
+      { name: "Tailwind Css" },
+      { name: "React JS" },
+      { name: "Next JS" },
+    ],
+    image: image2,
+    live: "https://clent-side-apple-gadgets.vercel.app",
     frontend_github:
       "https://github.com/Amit-Biswas-WD/Clent_Side_Apple_Gadgets.git",
+    backend_github: "",
+  },
+  {
+    num: "04",
+    category: "React js . Next js",
+    title: "project 4",
+    description:
+      "SolarEase is a modern web application based on solar energy. This project has a responsive and SEO friendly homepage designed using React.js and Next.js.",
+    stack: [
+      { name: "CSS 3" },
+      { name: "Tailwind Css" },
+      { name: "React JS" },
+      { name: "Next JS" },
+    ],
+    image: solarEase,
+    live: "https://solarease-frontend-anik.vercel.app",
+    frontend_github: "https://github.com/Amit-Biswas-WD/solarease",
     backend_github: "",
   },
 ];

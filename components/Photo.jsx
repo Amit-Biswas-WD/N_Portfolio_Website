@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import me from "../public/assets/resume/image_amit.png";
 
 const Photo = () => {
   return (
@@ -23,7 +24,7 @@ const Photo = () => {
           className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
         >
           <Image
-            src="/assets/me.png"
+            src={me}
             priority
             quality={100}
             fill

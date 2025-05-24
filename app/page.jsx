@@ -21,7 +21,7 @@ export default function Home() {
               various programming Languages and technology.
             </p>
             <div className="flex flex-col xl:flex-row gap-8 items-center">
-              <Link target="_blank" href={`https://drive.google.com/file/d/1zHewi-a-AcosandFL33dAeTmcb-d2ksH/view?usp=sharing`}>
+              <Link target="_blank" href={`https://drive.google.com/file/d/1cJJ7uD8Afh-ZEKAvOiM3-rlGVCJhl6Yh/view?usp=sharing`}>
               <Button
                 variant="outline"
                 size="lg"

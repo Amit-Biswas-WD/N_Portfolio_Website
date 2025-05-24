@@ -13,7 +13,7 @@ const info = [
   {
     icon: <FaPhoneAlt/>,
     title: "Phone",
-    description: "+88 01883478528",
+    description: "+88 01951400346",
   },
   {
     icon: <FaEnvelope/>,
