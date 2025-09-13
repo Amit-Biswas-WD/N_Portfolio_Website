@@ -22,6 +22,7 @@ import image2 from "@/public/assets/work/image2.png";
 import solarEase from "@/public/assets/work/solarease.png";
 import harMoney from "@/public/assets/work/harmoney.png";
 import WorkSliderBtn from "@/components/WorkSliderBtn";
+import motionImage from "@/app/image/image.png";
 
 const projects = [
   // {
@@ -82,9 +83,9 @@ const projects = [
     category: "Full Stack",
     title: "project 2",
     description:
-      "Apple Gadgets This is an e-commerce website built using Next.js. I have completed the Home page, which includes the Category section, Featured Products, New Arrivals, and Top Brand Products. It also features brand logos, a description section, and a footer. The website is fully responsive across all devices.",
+      "My website is hotel-related and user-friendly. Users can click on a room image on the Room Page to navigate to the Details Page. On the Details Page, users can click the Add button, which redirects them to the Login Page if they are not logged in. After logging in and adding a room, the user can update or delete their added card if they wish.The added information is linked to the user's email, ensuring only the respective user can manage their own data.",
     stack: [
-      { name: "HTML 5" },
+       { name: "HTML 5" },
       { name: "CSS 3" },
       { name: "TailwindCss" },
       { name: "JavaScript" },
@@ -101,13 +102,15 @@ const projects = [
   },
   {
     num: "03",
-    category: "React js . Next js",
+    category: "Apple Gadgets",
     title: "project 3",
     description:
       "Apple Gadgets This is an e-commerce website built using Next.js. I have completed the Home page, which includes the Category section, Featured Products, New Arrivals, and Top Brand Products. It also features brand logos, a description section, and a footer. The website is fully responsive across all devices.",
     stack: [
+       { name: "HTML 5" },
       { name: "CSS 3" },
-      { name: "Tailwind Css" },
+      { name: "TailwindCss" },
+      { name: "JavaScript" },
       { name: "React JS" },
       { name: "Next JS" },
     ],
@@ -119,13 +122,35 @@ const projects = [
   },
   {
     num: "04",
-    category: "React js . Next js",
+    category: "Troyable",
     title: "project 4",
+    description:
+      "Troyable is a modern web application. This project has a responsive and SEO friendly homepage designed using React.js, Next.js, Tailwind.css and Motion",
+    stack: [
+       { name: "HTML 5" },
+      { name: "CSS 3" },
+      { name: "TailwindCss" },
+      { name: "JavaScript" },
+      { name: "React JS" },
+      { name: "Next JS" },
+      { name: "Motion" },
+    ],
+    image: motionImage,
+    live: "https://troyable-motion.vercel.app",
+    frontend_github: "https://github.com/Amit-Biswas-WD/troyable_motion.git",
+    backend_github: "",
+  },
+  {
+    num: "05",
+    category: "Solar Ease",
+    title: "project 5",
     description:
       "SolarEase is a modern web application based on solar energy. This project has a responsive and SEO friendly homepage designed using React.js and Next.js.",
     stack: [
+       { name: "HTML 5" },
       { name: "CSS 3" },
-      { name: "Tailwind Css" },
+      { name: "TailwindCss" },
+      { name: "JavaScript" },
       { name: "React JS" },
       { name: "Next JS" },
     ],
