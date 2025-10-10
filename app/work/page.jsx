@@ -161,6 +161,11 @@ const projects = [
   },
 ];
 
+
+
+
+
+
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
 
