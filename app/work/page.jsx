@@ -21,50 +21,26 @@ import image1 from "@/public/assets/work/image.png";
 import image2 from "@/public/assets/work/image2.png";
 import solarEase from "@/public/assets/work/solarease.png";
 import harMoney from "@/public/assets/work/harmoney.png";
+import fishingtripper from "@/public/assets/work/fishingtripper.png";
+import havanacitycigar from "@/public/assets/work/havanacitycigar.png";
+import protfolio from "@/public/assets/work/protfolio.png";
 import WorkSliderBtn from "@/components/WorkSliderBtn";
 import motionImage from "@/app/image/image.png";
 
+{
+  /* project*/
+}
 const projects = [
-  // {
-  //   num: '01',
-  //   category: "font-end",
-  //   title: "project 1",
-  //   description: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form.",
-  // stack: [
-  //   {name: "HTML 5"},
-  //   {name: "CSS 3"},
-  //   {name: "TailwindCss"},
-  //   {name: "JavaScript"},
-  // ],
-  // image: image1,
-  // live: "",
-  // github: "",
-  // },
-  // {
-  //   num: '02',
-  //   category: "font-end",
-  //   title: "project 2",
-  //   description: "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form.",
-  // stack: [
-  //   {name: "HTML 5"},
-  //   {name: "CSS 3"},
-  //   {name: "TailwindCss"},
-  //   {name: "JavaScript"},
-  // ],
-  // image: image1,
-  // live: "",
-  // github: "",
-  // },
   {
     num: "01",
-    category: "Full Stack",
-    title: "project 1",
+    category: "Brew Bite",
+    title: "Brew Bite",
     description:
-      "Built a fully responsive full-stack coffee ordering platform where users can browse coffee items by category, price (high to low / low to high), rating (high to low / low to high), and call data. Integrated secure user authentication with Firebase, allowing logged-in users to access a personalized dashboard. Authenticated users can add, update, and delete their own orders. The frontend is built with React.js and styled using Tailwind CSS, while the backend is powered by Node.js, Express.js, and MongoDB.",
+      "Built a full-stack coffee ordering platform with secure authentication and a personalized dashboard. Users can browse, filter, and manage orders with full CRUD functionality. Developed using React, Tailwind CSS, Node.js, Express, MongoDB, and Firebase.",
     stack: [
-      { name: "HTML 5" },
-      { name: "CSS 3" },
-      { name: "TailwindCss" },
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "Tailwind Css" },
       { name: "JavaScript" },
       { name: "React JS" },
       { name: "Node JS" },
@@ -78,16 +54,17 @@ const projects = [
     backend_github:
       "https://github.com/Amit-Biswas-WD/brewbite-server-side.git",
   },
+
   {
     num: "02",
-    category: "Full Stack",
-    title: "project 2",
+    category: "Harmony Suites",
+    title: "Harmony Suites",
     description:
-      "My website is hotel-related and user-friendly. Users can click on a room image on the Room Page to navigate to the Details Page. On the Details Page, users can click the Add button, which redirects them to the Login Page if they are not logged in. After logging in and adding a room, the user can update or delete their added card if they wish.The added information is linked to the user's email, ensuring only the respective user can manage their own data.",
+      "Developed a responsive hotel listing and booking interface where users can view room details and manage their own added rooms. Implemented secure authentication and user‑specific data control, enabling logged‑in users to add, update, and delete their room entries. Built with React, Tailwind CSS, Node.js, Express, and MongoDB.",
     stack: [
-       { name: "HTML 5" },
-      { name: "CSS 3" },
-      { name: "TailwindCss" },
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "Tailwind Css" },
       { name: "JavaScript" },
       { name: "React JS" },
       { name: "Node JS" },
@@ -96,20 +73,20 @@ const projects = [
     ],
     image: harMoney,
     live: "https://zippy-sawine-294126.netlify.app",
-    frontend_github:
-      "https://github.com/Amit-Biswas-WD/b9a11-client-side.git",
+    frontend_github: "https://github.com/Amit-Biswas-WD/b9a11-client-side.git",
     backend_github: "https://github.com/Amit-Biswas-WD/b9a11-server-side.git",
   },
+
   {
     num: "03",
     category: "Apple Gadgets",
-    title: "project 3",
+    title: "Apple Gadgets",
     description:
-      "Apple Gadgets This is an e-commerce website built using Next.js. I have completed the Home page, which includes the Category section, Featured Products, New Arrivals, and Top Brand Products. It also features brand logos, a description section, and a footer. The website is fully responsive across all devices.",
+      "Developed a responsive e‑commerce product showcase website using Next.js featuring product categories, featured items, new arrivals, and brand sections. Designed with modern UI components and fully responsive layout.",
     stack: [
-       { name: "HTML 5" },
-      { name: "CSS 3" },
-      { name: "TailwindCss" },
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "Tailwind Css" },
       { name: "JavaScript" },
       { name: "React JS" },
       { name: "Next JS" },
@@ -120,16 +97,37 @@ const projects = [
       "https://github.com/Amit-Biswas-WD/Clent_Side_Apple_Gadgets.git",
     backend_github: "",
   },
+
   {
     num: "04",
-    category: "Troyable",
-    title: "project 4",
+    category: "Solar Ease",
+    title: "Solar Ease",
     description:
-      "Troyable is a modern web application. This project has a responsive and SEO friendly homepage designed using React.js, Next.js, Tailwind.css and Motion",
+      "Developed a modern, responsive solar energy landing page using Next.js, featuring service highlights, benefits, and informational sections. Designed with a clean UI and optimized for SEO and cross‑device responsiveness.",
     stack: [
-       { name: "HTML 5" },
-      { name: "CSS 3" },
-      { name: "TailwindCss" },
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "Tailwind Css" },
+      { name: "JavaScript" },
+      { name: "React JS" },
+      { name: "Next JS" },
+    ],
+    image: solarEase,
+    live: "https://solarease-frontend-anik.vercel.app",
+    frontend_github: "https://github.com/Amit-Biswas-WD/solarease",
+    backend_github: "",
+  },
+
+  {
+    num: "05",
+    category: "Troyable",
+    title: "Troyable",
+    description:
+      "Developed a modern landing page using Next.js and Framer Motion to deliver smooth animations and interactive UI. Featuring responsive layout, dynamic transitions, and showcase‑style design elements.",
+    stack: [
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "Tailwind Css" },
       { name: "JavaScript" },
       { name: "React JS" },
       { name: "Next JS" },
@@ -140,31 +138,66 @@ const projects = [
     frontend_github: "https://github.com/Amit-Biswas-WD/troyable_motion.git",
     backend_github: "",
   },
+
   {
-    num: "05",
-    category: "Solar Ease",
-    title: "project 5",
+    num: "06",
+    category: "Fishing Tripper",
+    title: "Fishing Tripper",
     description:
-      "SolarEase is a modern web application based on solar energy. This project has a responsive and SEO friendly homepage designed using React.js and Next.js.",
+      "Built a responsive fishing trip booking and information site using Next.js and React featuring trip listings, contact/inquiry form, and a clean user‑friendly layout.",
     stack: [
-       { name: "HTML 5" },
-      { name: "CSS 3" },
-      { name: "TailwindCss" },
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "Tailwind Css" },
       { name: "JavaScript" },
       { name: "React JS" },
       { name: "Next JS" },
     ],
-    image: solarEase,
-    live: "https://solarease-frontend-anik.vercel.app",
-    frontend_github: "https://github.com/Amit-Biswas-WD/solarease",
+    image: fishingtripper,
+    live: "https://fishingtripper.com",
+    frontend_github: "https://github.com/Amit-Biswas-WD/fishing_tripper",
+    backend_github: "",
+  },
+
+  {
+    num: "07",
+    category: "Havana City Cigar",
+    title: "Havana City Cigar",
+    description:
+      "Developed a responsive cigar e‑commerce platform featuring categorized product listings, shopping cart integration, and membership offerings for premium experiences. Built with a focus on showcasing diverse cigar collections and value‑added services.",
+    stack: [
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "Tailwind Css" },
+      { name: "JavaScript" },
+      { name: "React JS" },
+    ],
+    image: havanacitycigar,
+    live: "https://havanacitycigar.com",
+    frontend_github: "https://github.com/Amit-Biswas-WD/havanacitycigar_azoz",
+    backend_github: "",
+  },
+
+  {
+    num: "08",
+    category: "Folio Portfolio",
+    title: "Folio Portfolio",
+    description:
+      "Developed a personal portfolio website using Next.js and React to showcase projects, skills, services, and contact information with a clean, responsive UI design.",
+    stack: [
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "Tailwind Css" },
+      { name: "JavaScript" },
+      { name: "React JS" },
+      { name: "Next JS" },
+    ],
+    image: protfolio,
+    live: "https://folio-protfolio.vercel.app",
+    frontend_github: "https://github.com/Amit-Biswas-WD/Folio-protfolio",
     backend_github: "",
   },
 ];
-
-
-
-
-
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
@@ -219,30 +252,35 @@ const Work = () => {
                     </TooltipProvider>
                   </Link>
                   {/*github link  */}
-                  <Link target="_blank" href={project.frontend_github}>
-                    <TooltipProvider delayDuration={100}>
-                      <Tooltip>
-                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                          <BsGithub className="text-white text-3xl group-hover:text-accent " />
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>Front-end Github Repository</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  </Link>
-                  <Link target="_blank" href={project.backend_github}>
-                    <TooltipProvider>
-                      <Tooltip>
-                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                          <BsGithub className="text-white text-3xl group-hover:text-accent " />
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>Back-end Github Repository</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  </Link>
+                  {project?.frontend_github ? (
+                    <Link target="_blank" href={project.frontend_github}>
+                      <TooltipProvider delayDuration={100}>
+                        <Tooltip>
+                          <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                            <BsGithub className="text-white text-3xl group-hover:text-accent " />
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p>Front-end Github Repository</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </Link>
+                  ) : null}
+
+                  {project?.backend_github ? (
+                    <Link target="_blank" href={project.backend_github}>
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                            <BsGithub className="text-white text-3xl group-hover:text-accent " />
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p>Back-end Github Repository</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </Link>
+                  ) : null}
                 </div>
               </div>
             </div>
